@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.acmerobotics.dashboard.config.Config;
 import com.acmerobotics.roadrunner.geometry.Pose2d;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -8,6 +9,7 @@ import org.firstinspires.ftc.teamcode.Modules.MecanumDrive;
 import org.firstinspires.ftc.teamcode.Robot.Hardware;
 import org.firstinspires.ftc.teamcode.Utils.Pose;
 
+@Config
 @Autonomous
 public class Test extends LinearOpMode {
 
@@ -25,8 +27,8 @@ public class Test extends LinearOpMode {
     }
     STATES CS = STATES.IDLE, NS = STATES.IDLE;
 
-    public static double target1X = 20, target1Y = 0, target1Heading = 90;
-    public static double target2X = 10, target2Y = -20, target2Heading = 270;
+    public static double target1X = 10, target1Y = 0, target1Heading = 90;
+    public static double target2X = 3, target2Y = -10, target2Heading = 270;
 
     @Override
     public void runOpMode() throws InterruptedException {
@@ -49,7 +51,8 @@ public class Test extends LinearOpMode {
                     break;
 
                 case MOVING:
-                    if(drive.reachedTarget(0.2) && drive.reachedHeading(0.2)){
+                    if(drive.reachedTarget(0.6) && drive.reachedHeading(0.6)){
+                        drive.emergencyStop();
                         CS = NS;
                     }
                     break;

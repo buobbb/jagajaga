@@ -15,15 +15,15 @@ import java.util.List;
 
 
 public class FunnyLocalizer extends TwoTrackingWheelLocalizer {
-    public static double TICKS_PER_REV = 8192;
-    public static double WHEEL_RADIUS = 0.6889763779527559; // in
+    public static double TICKS_PER_REV = 2000;
+    public static double WHEEL_RADIUS = 0.629921; // in
     public static double GEAR_RATIO = 1; // output (wheel) speed / input (encoder) speed
 
-    public static double PARALLEL_X = 1.52440; // X is the up and down direction
-    public static double PARALLEL_Y = -5.4641732; // Y is the strafe direction
+    public static double PARALLEL_X = -2.16; // X is the up and down direction
+    public static double PARALLEL_Y = -2.16; // Y is the strafe direction
 
-    public static double PERPENDICULAR_X = 2.697047;
-    public static double PERPENDICULAR_Y = 4.62716;
+    public static double PERPENDICULAR_X = -2.16;
+    public static double PERPENDICULAR_Y = 2.16;
 
     public static double X_MULTIPLIER = 1; // Multiplier in the X direction
     public static double Y_MULTIPLIER = 1; // Multiplier in the Y direction

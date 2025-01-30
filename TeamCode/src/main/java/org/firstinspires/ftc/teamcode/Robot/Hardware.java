@@ -102,19 +102,19 @@ public class Hardware {
             meh3.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         }
 
-        sch0 = hm.get(Servo.class, "sch0");
-        sch1 = hm.get(Servo.class, "sch1");
-        sch2 = hm.get(Servo.class, "sch2");
-        sch3 = hm.get(Servo.class, "sch3");
-        sch4 = hm.get(Servo.class, "sch4");
-        sch5 = hm.get(Servo.class, "sch5");
+        sch0 = hm.get(Servo.class, "s0");
+        sch1 = hm.get(Servo.class, "s1");
+        sch2 = hm.get(Servo.class, "s2");
+        sch3 = hm.get(Servo.class, "s3");
+        sch4 = hm.get(Servo.class, "s4");
+        sch5 = hm.get(Servo.class, "s5");
 
-        seh0 = hm.get(Servo.class, "seh0");
-        seh1 = hm.get(Servo.class, "seh1");
-        seh2 = hm.get(Servo.class, "seh2");
-        seh3 = hm.get(Servo.class, "seh3");
-        seh4 = hm.get(Servo.class, "seh4");
-        seh5 = hm.get(Servo.class, "seh5");
+        seh0 = hm.get(Servo.class, "s0e");
+        seh1 = hm.get(Servo.class, "s1e");
+        seh2 = hm.get(Servo.class, "s2e");
+        seh3 = hm.get(Servo.class, "s3e");
+        seh4 = hm.get(Servo.class, "s4e");
+        seh5 = hm.get(Servo.class, "s5e");
 
         voltageSensor = hardwareMap.voltageSensor.iterator().next();
 
